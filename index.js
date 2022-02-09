@@ -41,7 +41,7 @@ ss.forEach(item=>{
 })
 marksarr.push((h/2))
 let y = (comp.value/50)*100
-let u= (y/100)*40
+let u= Math.ceil((y/100)*40)
 marksarr.push(u)
 console.log(marksarr)
 
