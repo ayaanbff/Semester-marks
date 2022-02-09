@@ -54,10 +54,11 @@ console.log(marksarr)
 console.log(marksarr)
 var f=0
 marksarr.forEach((b)=>{
-    f+=parseInt(b)
+    f+=b
 })
+console.log(f)
 document.getElementById("marks").style.visibility="visible"
-document.getElementById("marks").innerText="Congratulations! "+asa.value+" you got "+((f/200)*100).toFixed(2)+"%"
+document.getElementById("marks").innerText="Congratulations! "+asa.value+" you got "+(f/200*100).toFixed(2)+"%"
 firebase.firestore().collection("main").doc(asa.value.toString()).set({
 percent : ((f/200)*100).toFixed(2)+"%"
 })
