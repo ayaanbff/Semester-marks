@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is website designed to calculate the percentage of the icse semester 1 examination">
+    <meta name="author" content="Ayaan shakoor">
+ <link rel="stylesheet" href="style.css">
+    <title>Percentage-calculator</title>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+    <script defer src="index.js"></script>
+
+</head>
+<body style="margin: 0;">
+    <div id="main">
+        <div id="nav">
+            Percentage-calculator
+        </div>
+<div id="feild">
+    
+    <div id="lab">Enter your name</div>
+    <input id="asa" type="text" placeholder="">
+    <div id="lab">Physics</div>
+    <input class="sci" type="number" max="40">
+
+    <div id="lab">Chemistry</div>
+    <input class="sci" type="number" max="40">
+
+    <div id="lab">Maths</div>
+    <input class="math" type="number" max="40">
+
+    <div id="lab">English Literature</div>
+    <input class="e" type="number" max="40">
+
+    <div id="lab">English Language</div>
+    <input class="e" type="number" max="40">
+
+    <div id="lab">Geography</div>
+    <input class="ss" type="number" max="40">
+
+    <div id="lab">History/civics</div>
+    <input class="ss" type="number" max="40">
+
+    <div id="lab">Computer</div>
+    <input class="comp" type="number" max="50">
+
+    <div id="lab">Hindi</div>
+    <input class="hin" type="number" max="40">
+
+    <div id="lab">Biology</div>
+    <input class="sci" type="number" max="40">
+  
+<div id="btn">
+    <button id="calcbtn">Calculate</button>
+</div>
+</div>
+
+    </div>
+    <div id="marks">
+
+    </div>
+</body>
+</html>
