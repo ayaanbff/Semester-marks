@@ -11,10 +11,6 @@ flex-direction: column;
 align-content: center;
 justify-items: center;
 }
-input{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
 #feild{
     /* position: absolute; */
 width: 100%;
@@ -100,6 +96,11 @@ height: auto;
     width: 100%;
     text-align: center;
 }
+input{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+  background-color: #f2f2f2 
+}
 #marks{
     position:absolute;
     top:0;
@@ -126,10 +127,12 @@ height: auto;
     margin: 3%;
 }
 #feild{
-    margin-top: 14%;
+    margin-top: 2%;
 }
 #no{
     margin:2%;
 }
-
+input{
+    margin: 1%;
+}
 }
