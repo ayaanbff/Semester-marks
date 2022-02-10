@@ -11,6 +11,10 @@ flex-direction: column;
 align-content: center;
 justify-items: center;
 }
+input{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
 #feild{
     /* position: absolute; */
 width: 100%;
