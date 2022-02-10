@@ -27,7 +27,7 @@ overflow-x: hidden;
 }
 #lab{
     margin: .5%;
-    font-family: sans;
+    font-family: monospace;
     font-weight: bold;
     font-size: 1.1rem;
     color: white;
@@ -41,19 +41,37 @@ input{
     height: 10%;
 }
 #calcbtn{
-    margin:.5% ;
+    border:0;
+    margin:.8% ;
     width: 8%;
     height: 75%;
     border-radius: 25px;
     cursor: pointer;
+    background-color: lightgray;
+font-weight: bolder;
+font-family: monospace;
+
 }
 #btn{width: 100%;
 display: flex;
 justify-content: center;
 height: auto;
+
 }
+#marks{
+    font-family: monospace;
+}
+#calcbtn:hover{
+    animation: as .5s forwards ease-in;
+}
+@keyframes as {
+    to{
+        background-color: black;
+        color: white;
+    }
+}
+
 #nav{
-    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -61,13 +79,22 @@ height: auto;
     text-align: center;
     border-radius: 25px;
     color: white;
-    font-family: mono;
+    font-family: monospace;
     height: 7%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
     margin: .5%;
+    z-index: 1000 !important;
+}
+#no{
+    color: white;
+    font-family: monospace;
+    margin: .6%;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
 }
 #marks{
     position:absolute;
@@ -97,4 +124,8 @@ height: auto;
 #feild{
     margin-top: 14%;
 }
+#no{
+    margin:2%;
+}
+
 }
