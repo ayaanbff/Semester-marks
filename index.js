@@ -19,7 +19,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 a.forEach(item => {
- item.placeholder=" Enter your marks "
+ item.placeholder="Enter your marks"
  item.required=true
 });
 var btn = document.getElementById("calcbtn")
