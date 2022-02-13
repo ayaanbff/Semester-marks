@@ -45,10 +45,12 @@ let u= Math.ceil((y/100)*40)
 marksarr.push(u)
 console.log(marksarr)
 
-       const min = marksarr.reduce((a, b) => Math.min(a, b))
+     var min = marksarr.reduce((a, b) => Math.min(a, b))
        for(let a=0;a<marksarr.length;a++){
         if(marksarr[a]==min)
-        marksarr[a]=0
+        {marksarr[a]=0
+            min = 0 
+        }
        }
        console.log(min)
 console.log(marksarr)
