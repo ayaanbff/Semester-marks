@@ -25,6 +25,9 @@ overflow-x: hidden;
 /* margin-top: 10%; */
 /* z-index: 100; */
 }
+input:focus{
+    outline: none !important;
+}
 #lab{
     margin: .5%;
     font-family: monospace;
@@ -38,7 +41,7 @@ input{
     text-align: center;
     border-radius: 25px;
     width: 20%;
-    height: 10%;
+    height: 15%;
 }
 #calcbtn{
     border:0;
@@ -66,8 +69,8 @@ height: auto;
 }
 @keyframes as {
     to{
-        background-color: black;
-        color: white;
+        transform: translateZ(20px);
+        box-shadow: 5px 5px 5px  grey;
     }
 }
 
@@ -116,6 +119,17 @@ input{
     visibility: hidden;
 }
 @media(max-width:600px){
+    #main{
+        margin-top: 10px;
+        overflow-y: scroll;
+        scrollbar-width: 0;
+    }
+    *{
+        background-color: black;
+    }
+    ::-webkit-scrollbar{
+        width: 0;
+    }
     input{
         width: 80%;
     }
@@ -131,8 +145,12 @@ input{
 }
 #no{
     margin:2%;
+    margin-bottom: 3%;
 }
 input{
     margin: 1%;
+}
+input:focus{
+    outline: none !important;
 }
 }
