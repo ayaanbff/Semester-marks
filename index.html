@@ -7,18 +7,109 @@
     <meta name="description" content="This is website designed to calculate the percentage of the icse semester 1 examination by top 5 method">
     <meta name="author" content="Ayaan shakoor">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ayaanbff.github.io/percent/perc-2.jpg">
+    <meta property="og:image" content="perc-2.jpg">
 <meta property="og:image:type" content="image/jpg">
     <meta property="og:locale" content="en_GB">
     <meta property="og:image:height" content="200">
 <meta property="og:image:width" content="200"> 
     <link rel="shortcut icon" href="perc-2.jpg" type="image/jpg">
+ <link rel="stylesheet" href="style.css">
     <title>Percentage-calculator</title>
-
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
     <script defer src="index.js"></script>
 
 </head>
 <body style="margin: 0;">
+    <div id="start">
+<div id="st1">
+<img id="name" src="perc-2.jpg" alt="" srcset="">
+</div>
+    </div>
+    <div id="main">
+       
+        <div id="nav" style="background-color:#1f2122">
+            <img src="logo.png" class="logo" alt="" srcset="" style="background-color: #1f2122">
+            <span style="color: #6ce5e8;font-weight: bold;background-color: #1f2122;">S</span>emester<span><span style="margin-left:9.4%;font-weight:bold;color: #6ce5e8;background-color: #1f2122;"> M</span>arks
+        </div>
+        <div id="splash">
+           <div id="xcbse" onclick="btna('xcbse')">CBSE</div>
+<div id="xicse" onclick="btna('xicse')">ICSE</div>
+        </div>
+<div id="feild">
+    
+    <div id="lab">Enter your name</div>
+    <input id="asa" pattern="[0-9]+" type="text" placeholder="">
+    <div class="icse" id="lab">Physics</div>
+    <input class="icse sci"pattern="[0-9]+" type="number" max="40">
 
+    <div class="icse" id="lab">Chemistry</div>
+    <input class="sci icse"pattern="[0-9]+" type="number" max="40">
+
+    <div id="lab"class="icse">Maths</div>
+    <input class="math icse"pattern="[0-9]+" type="number" max="40">
+
+    <div id="lab"class="icse">English Literature</div>
+    <input class="e icse" pattern="[0-9]+"type="number" max="40">
+
+    <div id="lab"class="icse">English Language</div>
+    <input class="e icse"pattern="[0-9]+" type="number" max="40">
+
+    <div id="lab"class="icse">Geography</div>
+    <input class="ss icse"type="number"pattern="[0-9]+" max="40">
+
+    <div id="lab"class="icse">History/civics</div>
+    <input class="ss icse" pattern="[0-9]+"type="number" max="40">
+
+    <div id="lab"class="icse">Computer</div>
+    <input class="comp icse"type="number"pattern="[0-9]+" max="50">
+
+    <div id="lab"class="icse">Hindi</div>
+    <input class="hin icse"pattern="[0-9]+"type="number" max="40">
+
+    <div id="lab"class="icse">Biology</div>
+    <input class="sci icse"type="number" pattern="[0-9]+"max="40">
+  
+
+<!-- PARTITION -->
+
+
+
+    <div id="lab"class="cbse">English Literature & language</div>
+    <input class="litlang cbse" type="number"pattern="[0-9]+" max="100">
+ 
+    <div id="lab"class="cbse">Maths</div>
+    <input class="mathematics cbse"pattern="[0-9]+" type="number" max="100">
+
+    <div id="lab"class="cbse">Social Science</div>
+    <input class="socialscience cbse"type="number"pattern="[0-9]+" max="100">
+
+    <div id="lab"class="cbse">Hindi</div>
+    <input class="hindi cbse"type="number"pattern="[0-9]+" max="100">
+
+    <div id="lab"class="cbse">Science</div>
+    <input class="science cbse" type="number"pattern="[0-9]+" max="100">
+
+
+    <!-- PARTITION -->
+
+    
+<div id="btn">
+    <button id="calcbtn">Calculate</button>
+</div>
+<div id="no">Note : Your percentage here is calculated by top 5 method .</div>
+</div>
+
+    </div>
+   
+    <div id="marks">
+      
+    </div>
 </body>
 </html>
