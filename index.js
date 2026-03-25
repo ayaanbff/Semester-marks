@@ -155,12 +155,12 @@ document.querySelectorAll('input[type="number"]').forEach(item=>{
 item.min=0
     item.onchange=()=>{
         if(item.classList[0]=="comp"||item.classList[1]=="comp"){
-        if(item.value>50){
+        if(item.value>50 || item.value<50){
             var s=document.createElement("div")
             s.id="warn"
             var a = document.createElement("div")
             a.id="wr-1"
-            a.innerText="ICSE semester computer marks cannot be above 50."
+            a.innerText="ICSE semester computer marks cannot be above 50 and cannot be below 0."
             s.append(a)
             document.getElementById("feild").append(s)
             document.getElementById("warn").onclick=()=>{
