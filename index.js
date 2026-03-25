@@ -171,12 +171,12 @@ item.min=0
         }
     }
 else if(item.classList[0]=="icse"||item.classList[1]=="icse") {
-    if(item.value>40){
+    if(item.value>40|| item.value<0){
         var s=document.createElement("div")
         s.id="warn"
         var a = document.createElement("div")
         a.id="wr"
-        a.innerText="ICSE semester marks of all subjects expect computer cannot be above 40."
+        a.innerText="ICSE semester marks of all subjects expect computer cannot be above 40 or below 0."
         s.append(a)
         document.getElementById('feild').append(s)
 document.getElementById("warn").onclick=()=>{
